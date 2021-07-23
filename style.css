@@ -1,9 +1,24 @@
 body {
-    background:rgb(167, 79, 79);
-    text-align: center;
-  }
-  
-  h1, h2{
-    font-family: 'Otomanopee One', sans-serif;
-        color: gold;
-  }
+  background: rgb(167, 79, 79);
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: "Otomanopee One", sans-serif;
+  color: gold;
+}
+
+.waterDragon {
+  display: block;
+  box-sizing: border-box;
+  background-color: lightblue;
+  margin: 20px auto;
+}
+
+.fireDragon {
+  display: block;
+  box-sizing: border-box;
+  background-color: lightpink;
+  margin: 20px auto;
+}
