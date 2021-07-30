@@ -16,28 +16,38 @@
     <script src="./script.js" defer></script>
   </head>
 
-  <body>
+  <body onLoad="javascript:loadDragonImages()">
+    <button class="btn" onclick="incrementClickTotal(1, 'Water')">
+      <img id="imgSrcWater" alt="water dragon" />
+      Water - <span id="clickTotalWater">0</span>
+    </button>
+    <button class="btn" onclick="incrementClickTotal(1, 'Fire')">
+      <img id="imgSrcFire" alt="fire dragon" />
+      Fire - <span id="clickTotalFire">0</span>
+    </button>
+    <button class="btn" onclick="incrementClickTotal(1, 'Earth')">
+      <img id="imgSrcEarth" alt="earth dragon" />
+      Earth - <span id="clickTotalEarth">0</span>
+    </button>
+    <button class="btn" onclick="incrementClickTotal(1, 'Forest')">
+      <img id="imgSrcForest" alt="Forest dragon" />
+      Forest - <span id="clickTotalForest">0</span>
+    </button>
+    <button class="btn" onclick="incrementClickTotal(1, 'Ice')">
+      <img id="imgSrcIce" alt="fire dragon" />
+      Ice - <span id="clickTotalIce">0</span>
+    </button>
     <h1>Dragon Clicker Application</h1>
-    <h2>Click on the Water Dragon!</h2>
+    <h2>Recently Clicked Dragon!</h2>
     <img
-      class="waterDragon"
-      src="./images/dragon_PNG84559.png"
-      alt="water dragon"
+      id="imgArena"
+      class="arenaDragon"
+      src=""
+      alt="Select a Dragon"
       width="200"
       height="200"
-      onclick="incrementClickTotal1(1)"
+      onclick=""
     />
-    <h2>Total Water Dragon Clicks: <span id="clickTotal1">0</span></h2>
-
-    <h2>Click on the Fire Dragon!</h2>
-    <img
-      class="fireDragon"
-      src="./images/vippng.com-red-fire-png-531056.png"
-      alt="fire dragon"
-      width="200"
-      height="200"
-      onclick="incrementClickTotal2(1)"
-    />
-    <h2>Total Fire Dragon Clicks: <span id="clickTotal2">0</span></h2>
+    <h2>Total Dragon Clicks: <span id="clickTotalArena">0</span></h2>
   </body>
 </html>

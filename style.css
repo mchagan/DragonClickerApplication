@@ -1,24 +1,32 @@
 body {
-  background: rgb(167, 79, 79);
+  background: whitesmoke;
   text-align: center;
 }
 
 h1,
 h2 {
   font-family: "Otomanopee One", sans-serif;
+  color: maroon;
+}
+
+.arenaDragon {
+  display: block;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  margin: 20px auto;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
   color: gold;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Otomanopee One", sans-serif;
 }
 
-.waterDragon {
-  display: block;
-  box-sizing: border-box;
-  background-color: lightblue;
-  margin: 20px auto;
-}
-
-.fireDragon {
-  display: block;
-  box-sizing: border-box;
-  background-color: lightpink;
-  margin: 20px auto;
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
 }
