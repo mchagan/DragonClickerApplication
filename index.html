@@ -1,53 +1,36 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
 
-    <title>Dragon Clicker Application</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
 
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="./style.css" />
-    <!-- javascript file -->
-    <script src="./script.js" defer></script>
-  </head>
+  <title>Dragon Clicker Application</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet" />
 
-  <body onLoad="javascript:loadDragonImages()">
-    <button class="btn" onclick="incrementClickTotal(1, 'Water')">
-      <img id="imgSrcWater" alt="water dragon" />
-      Water - <span id="clickTotalWater">0</span>
-    </button>
-    <button class="btn" onclick="incrementClickTotal(1, 'Fire')">
-      <img id="imgSrcFire" alt="fire dragon" />
-      Fire - <span id="clickTotalFire">0</span>
-    </button>
-    <button class="btn" onclick="incrementClickTotal(1, 'Earth')">
-      <img id="imgSrcEarth" alt="earth dragon" />
-      Earth - <span id="clickTotalEarth">0</span>
-    </button>
-    <button class="btn" onclick="incrementClickTotal(1, 'Forest')">
-      <img id="imgSrcForest" alt="Forest dragon" />
-      Forest - <span id="clickTotalForest">0</span>
-    </button>
-    <button class="btn" onclick="incrementClickTotal(1, 'Ice')">
-      <img id="imgSrcIce" alt="fire dragon" />
-      Ice - <span id="clickTotalIce">0</span>
-    </button>
-    <h1>Dragon Clicker Application</h1>
-    <h2>Recently Clicked Dragon!</h2>
-    <img
-      id="imgArena"
-      class="arenaDragon"
-      src=""
-      alt="Select a Dragon"
-      width="200"
-      height="200"
-      onclick=""
-    />
-    <h2>Total Dragon Clicks: <span id="clickTotalArena">0</span></h2>
-  </body>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- javascript files -->
+  <script defer src='./models.js'></script>
+  <script defer src='./view.js'></script>
+  <script defer src='./controller.js'></script>
+</head>
+
+<!-- <body onLoad="javascript:loadDragonImages()"> -->
+
+<body>
+  <h1>Dragon Clicker Application</h1>
+  <selction>
+    <h1>Dragon Types</h1>
+    <ul>
+      <div id="mainDiv">
+
+      </div>
+    </ul>
+  </selction>
+
+  <main>
+  </main>
+</body>
+
 </html>
