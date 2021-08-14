@@ -11,8 +11,8 @@ const mainView = {
     return dragons.reduce(
       (acc, dragon) =>
         (acc += `
-          <div class="${dragon.type}" data-id="${dragon.id}">
-            <h1>${dragon.type} Dragon</h1>
+          <div class="card" data-id="${dragon.id}">
+            <h2>${dragon.type} Dragon</h2>
             <div onclick='controller.increment(${dragon.id})'>
             <img
               id="imgArena"
@@ -30,7 +30,7 @@ const mainView = {
 };
 
 const listView = {
-  list: document.getElementById("mainDiv"),
+  list: document.getElementById("listDiv"),
   init() {
     this.list.innerHTML = "";
   },
@@ -38,7 +38,7 @@ const listView = {
     return arr.reduce(
       (acc, cur) =>
         (acc += `  
-         <button class="btn" onclick='controller.dispatch("${cur.type}")'>
+         <button class="btn" onclick='controller.dispatch("${cur.type}",event)'>
          <img 
             alt="${cur.type}" 
             src='${controller.dragonImage(cur.type)}'

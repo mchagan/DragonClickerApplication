@@ -14,21 +14,43 @@
   <script defer src='./models.js'></script>
   <script defer src='./view.js'></script>
   <script defer src='./controller.js'></script>
-</head>
+  <script defer src='./modal.js'></script>
 
-<!-- <body onLoad="javascript:loadDragonImages()"> -->
+</head>
 
 <body>
   <h1>Dragon Clicker Application</h1>
   <selction>
     <h1>Dragon Types</h1>
     <ul>
-      <div id="mainDiv">
-
+      <div id="listDiv">
       </div>
     </ul>
   </selction>
-
+  <h3>Click above to activate a dragon</h3>
+  <h3>Ctrl+MouseButton1 on above Dragons to edit image</h3>
+  <div id="main-container">
+    <dialog id="form-dialog">
+      <form>
+        <h2>Edit/Add Dragon</h2>
+        <h3>Enter new name to add dragon:</h3>
+        <div class="form-element">
+          <label>Dragon Name</label>
+          <input type="text" name="dragonName" id="dragonName"/>
+        </div>
+        <div class="form-element">
+          <label>Icon Image Source File</label>
+          <input type="file" name="dragonImgSrc" id="dragonImgSrc" />
+        </div>
+        <button type="button" id="submit-button">Submit</button>
+        <button type="button" id="close-button">Close</button>
+      </form>
+    </dialog>
+    <button id="fill-form-button">Add Dragon Type</button>
+    <div id="form-status"></div>
+  </div>
+  
+  <h1>Active Dragons</h1>
   <main>
   </main>
 </body>
